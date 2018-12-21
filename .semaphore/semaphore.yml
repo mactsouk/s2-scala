@@ -19,4 +19,6 @@ blocks:
       - name: Run Scala code
         commands:
           - checkout
+          - scalac hw.scala
+          - scalac HW
 
