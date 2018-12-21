@@ -12,6 +12,7 @@ blocks:
       - name: Choose Scala version
         commands:
           - checkout
+          - scala -version
 
   - name: Compile Scala code
     task:
