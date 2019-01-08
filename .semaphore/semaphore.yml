@@ -13,12 +13,17 @@ blocks:
         commands:
           - checkout
           - scala -version
+          - sem-version scala 2.11
+          - scala -version
+          - sem-version scala 2.12
+          - scala -version
 
   - name: Compile Scala code
     task:
       jobs:
-      - name: Run Scala code
+      - name: Run Scala code with 2.11
         commands:
           - checkout
+          - sem-version scala 2.11
           - scala hw.scala
 
